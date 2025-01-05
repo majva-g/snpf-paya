@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Models;
+namespace Domain\User\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+
+use Domain\Sheba\Models\Sheba;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -46,8 +48,8 @@ class User extends Authenticatable
         ];
     }
 
-    // public function shebas()
-    // {
-    //     return $this->hasMany(Sheba::class);
-    // }
+    public function shebas()
+    {
+        return $this->hasMany(Sheba::class);
+    }
 }
