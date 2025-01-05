@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "626b9e7ddd47fb7eff9aaa53cce0c9ad",
+    "content-hash": "28f28cadf1f6c089bd8dd00acf569c2b",
     "packages": [
         {
             "name": "brick/math",
@@ -1270,21 +1270,21 @@
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.3.2",
+            "version": "v0.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "0e0535747c6b8d6d10adca8b68293cf4517abb0f"
+                "reference": "7b4029a84c37cb2725fc7f011586e2997040bc95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/0e0535747c6b8d6d10adca8b68293cf4517abb0f",
-                "reference": "0e0535747c6b8d6d10adca8b68293cf4517abb0f",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/7b4029a84c37cb2725fc7f011586e2997040bc95",
+                "reference": "7b4029a84c37cb2725fc7f011586e2997040bc95",
                 "shasum": ""
             },
             "require": {
-                "composer-runtime-api": "^2.2",
                 "ext-mbstring": "*",
+                "illuminate/collections": "^10.0|^11.0",
                 "php": "^8.1",
                 "symfony/console": "^6.2|^7.0"
             },
@@ -1293,9 +1293,8 @@
                 "laravel/framework": ">=10.17.0 <10.25.0"
             },
             "require-dev": {
-                "illuminate/collections": "^10.0|^11.0",
                 "mockery/mockery": "^1.5",
-                "pestphp/pest": "^2.3|^3.4",
+                "pestphp/pest": "^2.3",
                 "phpstan/phpstan": "^1.11",
                 "phpstan/phpstan-mockery": "^1.1"
             },
@@ -1305,7 +1304,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "0.3.x-dev"
+                    "dev-main": "0.1.x-dev"
                 }
             },
             "autoload": {
@@ -1323,9 +1322,9 @@
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
                 "issues": "https://github.com/laravel/prompts/issues",
-                "source": "https://github.com/laravel/prompts/tree/v0.3.2"
+                "source": "https://github.com/laravel/prompts/tree/v0.1.25"
             },
-            "time": "2024-11-12T14:59:47+00:00"
+            "time": "2024-08-12T22:06:33+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -5799,6 +5798,73 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "akrillia/laravel-beyond",
+            "version": "7.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AkrilliA/laravel-beyond.git",
+                "reference": "1a1a10b0fbc0d924b91b31a7f30efb2fdca57228"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AkrilliA/laravel-beyond/zipball/1a1a10b0fbc0d924b91b31a7f30efb2fdca57228",
+                "reference": "1a1a10b0fbc0d924b91b31a7f30efb2fdca57228",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "^8.2",
+                "illuminate/console": "^10.0|^11.0",
+                "illuminate/filesystem": "^10.0|^11.0",
+                "illuminate/support": "^10.0|^11.0",
+                "laravel/prompts": "^0.1.13",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.10|^2.0",
+                "orchestra/testbench": "^8.23|^9.1",
+                "phpstan/phpstan": "^1.10|^2.0",
+                "phpunit/phpunit": "^10.3",
+                "spatie/laravel-data": "^3.7|^4.0",
+                "spatie/laravel-query-builder": "^5.2",
+                "spatie/laravel-queueable-action": "^2.14"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AkrilliA\\LaravelBeyond\\LaravelBeyondServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "AkrilliA\\LaravelBeyond\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Jonas Regner",
+                    "email": "regnerjonas@protonmail.com"
+                },
+                {
+                    "name": "Alexander Gaal",
+                    "email": "alexander.gaal@gipfel.dev"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/AkrilliA/laravel-beyond/issues",
+                "source": "https://github.com/AkrilliA/laravel-beyond/tree/v7.0.4"
+            },
+            "time": "2024-07-31T11:50:41+00:00"
+        },
         {
             "name": "fakerphp/faker",
             "version": "v1.24.1",
