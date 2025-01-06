@@ -3,6 +3,7 @@
 namespace Domain\Sheba\DataObjects;
 
 use DateTime;
+use Domain\Sheba\Enums\ShebaRequestStatus;
 use Spatie\LaravelData\Attributes\WithCast;
 use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
 
@@ -15,7 +16,7 @@ final class ShebaRequestData extends Data
         public int $price,
         public string $fromShebaNumber,
         public string $toShebaNumber,
-        public string $status,
+        public ShebaRequestStatus $status,
         #[WithCast(DateTimeInterfaceCast::class)]
         public DateTime $createdAt
     ) {}
