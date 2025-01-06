@@ -15,7 +15,7 @@ final class CreateShebaRequestRequest extends FormRequest
         return [
             'price' => 'required|numeric|min:1',
             'fromShebaNumber' => 'required|string|exists:shebas,number',
-            'ToShebaNumber' => 'required|string|exists:shebas,number',
+            'toShebaNumber' => 'required|string|exists:shebas,number',
             'note' => 'nullable|string',
         ];
     }
