@@ -39,7 +39,7 @@ final readonly class AcceptOrDeclineShebaRequestAction
             $this->createTransactionAction->execute(CreateTransactionData::from([
                 'sheba_request_id' => $shebaRequest->id,
                 'amount' => $shebaRequest->price,
-                'transaction_type' => TransactionType::CREDIT,
+                'transaction_type' => TransactionType::REFUND,
             ]));
         }
 
