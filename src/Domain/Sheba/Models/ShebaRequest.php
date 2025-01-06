@@ -18,7 +18,9 @@ final class ShebaRequest extends Model
         'note',
     ];
 
-
+    protected $casts = [
+        'status' => ShebaRequestStatus::class
+    ];
     public function transaction()
     {
         return $this->hasMany(Transaction::class);
