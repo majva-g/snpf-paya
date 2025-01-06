@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 
-use Domain\Sheba\Models\Sheba as ModelsSheba;
+use Domain\Sheba\Models\Sheba;
 use Illuminate\Database\Seeder;
 
 class ShebaSeeder extends Seeder
@@ -13,6 +13,6 @@ class ShebaSeeder extends Seeder
      */
     public function run(): void
     {
-        ModelsSheba::factory()->count(10)->create();
+        Sheba::factory()->count(10)->create();
     }
 }
