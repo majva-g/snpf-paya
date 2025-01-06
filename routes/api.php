@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Http\Request;
+use Application\API\Sheba\Controllers\CreateShebaRequestController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
+
+ Route::post('/sheba', CreateShebaRequestController::class);
+
